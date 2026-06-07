@@ -1,7 +1,6 @@
 # RSTA Spoof 🛡️
 **Advanced SNI Spoofing & DPI Bypass for Android.**
 
-یب
 
 RSTA Spoof is a high-performance local proxy for Android designed to bypass Deep Packet Inspection (DPI) using advanced techniques like TTL tricks and SNI fragmentation.
 
