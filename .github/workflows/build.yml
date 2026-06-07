@@ -66,13 +66,13 @@ jobs:
           path: app/src/main/jniLibs/
 
       - name: Build APK
-        run: bash gradlew assembleRelease --no-daemon
+        run: bash gradlew assembleDebug assembleRelease --no-daemon
 
-      - name: Upload Release APK
+      - name: Upload APKs
         uses: actions/upload-artifact@v4
         with:
-          name: apk-release
-          path: app/build/outputs/apk/release/*.apk
+          name: apks
+          path: app/build/outputs/apk/**/*.apk
 
   release:
     name: Create GitHub Release
@@ -85,16 +85,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download Release APK
+      - name: Download APKs
         uses: actions/download-artifact@v4
         with:
-          name: apk-release
+          name: apks
           path: artifacts/
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: artifacts/*.apk
+          files: |
+            artifacts/debug/*.apk
+            artifacts/release/*.apk
           generate_release_notes: true
           draft: false
           prerelease: false
