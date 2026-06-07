@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#080B10</color>
+    <color name="surface">#0F1520</color>
+    <color name="surface_elevated">#161E2E</color>
+
+    <color name="primary">#00FFC2</color>
+    <color name="primary_dark">#00CC9B</color>
+    <color name="primary_glow">#4000FFC2</color>
+
+    <color name="accent">#8F75FF</color>
+    <color name="accent_glow">#338F75FF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+
+    <color name="button_text">#080B10</color>
+    <color name="button_text_secondary">#FFFFFF</color>
+
+    <color name="divider">#1E293B</color>
+
+    <color name="color_ok">#10B981</color>
+    <color name="color_warn">#F59E0B</color>
+    <color name="color_error">#EF4444</color>
+    <color name="color_idle">#475569</color>
+
+    <color name="chip_selected_bg">#1A332E</color>
+    <color name="chip_border">#334155</color>
+    <color name="method_selected_border">#00FFC2</color>
+</resources>

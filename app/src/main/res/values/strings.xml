@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RSTA Spoof</string>
+    <string name="app_subtitle">RSTA Spoof\non v4.0.0</string>
+    <string name="telegram_support">گروه تلگرام برای پشتیبانی و رفع مشکلات:</string>
+    <string name="telegram_handle">\@rstasnispoof</string>
+
+    <string name="action_start">Connect</string>
+    <string name="action_stop">Disconnect</string>
+    <string name="action_starting">Connecting…</string>
+    <string name="action_log">Logs</string>
+    <string name="action_save">Save</string>
+
+    <string name="title_config">Settings</string>
+    <string name="title_log">Live Log</string>
+
+    <string name="label_status">Status</string>
+    <string name="label_fake_sni">Fake SNI Domain</string>
+    <string name="label_server_ip">Server IP</string>
+    <string name="label_local_port">Local Port</string>
+    <string name="label_bypass_method">Bypass Method</string>
+    <string name="label_proxy_hint">Set proxy to 127.0.0.1:%1$d</string>
+
+    <string name="hint_sni">www.hcaptcha.com</string>
+    <string name="hint_ip">104.19.230.21</string>
+    <string name="hint_port">40443</string>
+
+    <string name="preset_sni_1">www.hcaptcha.com</string>
+    <string name="preset_sni_2">hcaptcha.com</string>
+
+    <string name="method_combined">Combined</string>
+    <string name="method_combined_desc">TTL trick + fragmentation</string>
+    <string name="method_combined_badge">Recommended</string>
+    <string name="method_fragment">Fragment</string>
+    <string name="method_fragment_desc">SNI split fragmentation</string>
+    <string name="method_fake_sni">Fake SNI</string>
+    <string name="method_fake_sni_desc">TTL trick probe packets</string>
+
+    <string name="status_idle">Ready</string>
+    <string name="status_active">Connected</string>
+    <string name="status_starting">Starting…</string>
+    <string name="status_error">Error</string>
+
+    <string name="saved_auto">Settings saved</string>
+    <string name="error_invalid_sni">Enter a valid domain</string>
+    <string name="error_invalid_ip">Enter a valid IP address</string>
+    <string name="error_invalid_port">Port must be 1024–65535</string>
+    <string name="error_port_in_use">Port %1$d is already in use — stop the other proxy or choose another port</string>
+    <string name="error_session_start">Could not start proxy — check port and settings</string>
+
+    <string name="action_clear">Clear</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_paste_clipboard">Paste from Clipboard</string>
+    <string name="action_parse_apply">Parse &amp; Apply</string>
+    <string name="action_parse_bulk">Parse All Configs</string>
+    <string name="action_pick_config">Choose from List…</string>
+    <string name="label_input_mode">Input Mode</string>
+    <string name="label_remote">Remote Endpoint (host:port)</string>
+    <string name="label_sni">Fake SNI</string>
+    <string name="label_port">Local Listen Port</string>
+    <string name="label_method">Bypass Method</string>
+    <string name="label_single_config_hint">Paste a vless:// / trojan:// URI — or a SNI:IP pair</string>
+    <string name="label_bulk_hint">Paste multiple configs (one per line)</string>
+    <string name="hint_remote">104.19.230.21:443</string>
+    <string name="hint_single_config">vless://… or example.com 1.2.3.4</string>
+    <string name="hint_bulk_configs">vless://…\nexample.com 1.2.3.4</string>
+    <string name="hint_parse_preview">Parsed result will appear here…</string>
+    <string name="error_invalid_endpoint">Invalid endpoint (use host:port)</string>
+    <string name="error_empty_input">Input is empty</string>
+    <string name="error_parse_failed">Could not parse — check format</string>
+    <string name="error_no_configs_found">No valid configs found</string>
+    <string name="reset_done">Reset to defaults</string>
+    <string name="parsed_applied">Parsed and applied</string>
+    <string name="bulk_applied">Applied first of %1$d config(s)</string>
+    <string name="config_applied">Config #%1$d applied</string>
+    <string name="clipboard_empty">Clipboard is empty</string>
+    <string name="dialog_pick_config">Pick a Config</string>
+    <string name="action_config">Config</string>
+    <string name="saved">Profile saved</string>
+</resources>

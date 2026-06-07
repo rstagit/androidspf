@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Glow Effect -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/primary_glow" />
+        </shape>
+    </item>
+    <!-- Main Button -->
+    <item android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="135"
+                android:endColor="@color/primary_dark"
+                android:startColor="@color/primary"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>
