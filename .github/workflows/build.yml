@@ -1,10 +1,10 @@
-name: Build AndroidSPF
+name: Build & Release AndroidSPF
 
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 env:
@@ -66,13 +66,7 @@ jobs:
           path: app/src/main/jniLibs/
 
       - name: Build APK
-        run: bash gradlew assembleDebug assembleRelease --no-daemon
-
-      - name: Upload Debug APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: apk-debug
-          path: app/build/outputs/apk/debug/*.apk
+        run: bash gradlew assembleRelease --no-daemon
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
@@ -81,10 +75,10 @@ jobs:
           path: app/build/outputs/apk/release/*.apk
 
   release:
-    name: Create Release
+    name: Create GitHub Release
     needs: build-apk
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -95,13 +89,12 @@ jobs:
           name: apk-release
           path: artifacts/
 
-      - name: Create GitHub Release
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ github.run_number }}
-          name: Release v${{ github.run_number }}
           files: artifacts/*.apk
           generate_release_notes: true
-          draft: true
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
