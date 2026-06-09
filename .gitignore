@@ -1,15 +1,17 @@
 *.iml
-.gradle
-/local.properties
-/.idea
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.gradle/
 local.properties
+/.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
 app/build/
-app/src/main/jniLibs/
 
 gobridge/*.so
 gobridge/*.h
+
+*.jks
+*.keystore
+
