@@ -1,6 +1,6 @@
 دانلود از قسمت release:
 
-(https://github.com/rstagit/androidspf/releases/)[https://github.com/rstagit/androidspf/releases/]
+https://github.com/rstagit/androidspf/releases/
 
 # RSTA Spoof 🛡️
 **Advanced SNI Spoofing & DPI Bypass for Android.**
