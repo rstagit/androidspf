@@ -1,4 +1,4 @@
-دانلود از قسمت release:
+دانلود از قسمت release نسخه app-release رو نصب کنید:
 
 https://github.com/rstagit/androidspf/releases/
 
